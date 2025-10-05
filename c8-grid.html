@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>activity</title>
+    <style>
+      
+      .container {
+        background-color: yellow;
+        height: 1000px;
+        width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;
+        
+      }
+      
+    
+      #box1{
+        background-color: purple;
+        grid-column: 1/4;
+      }
+      #box2{
+        background-color: green;
+        grid-row: 2/4;
+        margin-right: 20px;
+      }
+      #box3{
+        background-color: blue;
+        border-bottom: 2px solid rgb(0, 0, 228);
+      }
+      #box4{
+        background-color: blue;
+        grid-row: 3/4;
+      }
+      #box5{
+        background-color: black;
+        grid-column: 3/4;
+        grid-row: 2/4;
+        margin-left: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">box1</div>
+      <div class="box" id="box2">box2</div>
+      <div class="box" id="box3">box3</div>
+      <div class="box" id="box4">box4</div>
+      <div class="box" id="box5">box5</div>
+      
+    </div>
+  </body>
+</html>

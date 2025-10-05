@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Gallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .gallery {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin: auto;
+      }
+      .card {
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+        aspect-ratio: 4/3;
+      }
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card:hover {
+        border: black solid 2px;
+        box-shadow: 2px 4px 5px 5px rgb(110, 106, 106);
+      }
+      @media (min-width: 768px) and (max-width:1024px){
+        .gallery{
+            grid-template-columns: 1fr 1fr;
+        }
+      }
+      @media (max-width:767px){
+        .gallery{
+            grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Js7N6e649aNcz4IJWmsZKnZ21ibv5OHJOg&s"
+          alt=""
+        />
+      </div>
+      <div class="card">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+          alt=""
+        />
+      </div>
+      <div class="card">
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/008/951/892/non_2x/cute-puppy-pomeranian-mixed-breed-pekingese-dog-run-on-the-grass-with-happiness-photo.jpg"
+          alt=""
+        />
+      </div>
+      <div class="card">
+        <img
+          src="https://pettownsendvet.com/wp-content/uploads/2023/01/iStock-1052880600.jpg"
+          alt=""
+        />
+      </div>
+      <div class="card">
+        <img
+          src="https://ichef.bbci.co.uk/ace/standard/3840/cpsprodpb/d42c/live/bf08f390-87e9-11f0-b36e-47414de99d82.jpg"
+          alt=""
+        />
+      </div>
+      <div class="card">
+        <img
+          src="https://housing.com/news/wp-content/uploads/2023/07/Cute-dog-breeds-that-make-the-best-pets-f.jpg"
+          alt=""
+        />
+      </div>
+      <div class="card">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf-N5cOX2B9BQ1ci8WK1wTr6JAV8O-1-nVeg&s"
+          alt=""
+        />
+      </div>
+      <div class="card">
+        <img
+          src="https://img.freepik.com/free-photo/beautiful-pet-portrait-dog_23-2149218451.jpg?semt=ais_hybrid&w=740&q=80"
+          alt=""
+        />
+      </div>
+      <div class="card">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-180680638-676f621f720bc.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>

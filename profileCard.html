@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        .card{
+            box-sizing: border-box;
+            margin: auto;
+            padding: 10px;
+            width: 450px;
+            margin-top: 30px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 5px 5px 12px 0.65px gray;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .identity{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;   
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .profile{
+            width: 150px;
+            object-fit: cover;
+            border-radius: 45%;
+            position: relative;
+            top: 10px;
+        }
+        h2{
+            font-size: 1.8rem;
+            font-weight:bold ;
+        }
+        p{
+            color: rgba(78, 78, 78, 0.904);
+        }
+        a{
+            margin-right: 10px;
+            background-color: blue;
+            text-decoration: none;
+            font-weight: 700;
+            color: white;
+            padding: 6px 12px ;
+            border-radius: 8px;
+        }
+        a:hover{
+            background-color: purple;
+            color:bisque;
+            padding: 8px 15px;
+            border-radius: 6px;
+        }
+        @media (max-width: 640px){
+            .card{
+                flex-direction: column;
+                gap: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .info{
+                text-align: center;
+            }
+            .buttons{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            a{
+                padding: 10px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="identity">    
+        <img src="https://thumbs.dreamstime.com/b/faceless-male-avatar-hoodie-illustration-minimalist-default-photo-placeholder-wearing-light-gray-background-ideal-377566416.jpg" alt="profile pic" class="profile">
+        <h2>Hanzala</h2>
+        </div>
+        <div class="info">
+            <p>Web Designer & JavaScript Enthusiat. Loves clean, creative layouts and good coffee!</p>
+            <div class="buttons">
+                <a href="#" class="contact">Contact</a>
+        <a href="#" class="portfolio">Portfolio</a>
+            </div>
+        
+        </div>
+        
+    </div>
+</body>
+</html>
